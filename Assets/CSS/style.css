@@ -1,0 +1,260 @@
+/* ----- BRANDING ------
+    MAIN BG COLOR - DARK ORANGE AS #D85300
+    MAIN FONT COLOR - GOLD AS #FFD700
+    SECONDARY BG COLOR - LIGHT ORANGE AS #FFBE4D
+    SECONDARY FONT COLOR - DARK GOLD AS #4E4200 OR (DARKER) #272100
+    SHADOW COLOR - LIGHT ORANGE AS #FFAB1A;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+body {
+    background-color: #FFBE4D;
+}
+
+
+h2 {
+    font-size: 48px;
+    float: left;
+    margin-left: 50px;
+    
+}
+
+
+/* ---- BEGIN NAVIGATION BAR / HEADER ---- */
+.navigation {
+    background-color: #D85300;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    border-radius: 10px;
+}
+
+.navigation h1 {
+    font-size: 40px;
+    color: #FFD700;
+    justify-content: flex-start;
+}
+
+.navigation ul {
+    
+    justify-content: flex-end;
+}
+
+.navigation ul li {
+    display: inline;
+    padding-right: 30px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #FFD700;
+    font-size: 22px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+/* ---- END NAVIGATION BAR / HEADER ---- */
+
+
+/* ---- BEGIN BANNER / SUBTITLE ---- */
+
+.hero {
+    background-image: url("../Images/banner-x.jpg");
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    height: 600px;
+    justify-content: flex-end;
+    position: relative;
+}
+
+
+.quote {
+    color: #FFBE4D;
+    font-size: 35px;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    width: 33%;
+    text-shadow: 3px 3px #4E4200;
+}
+
+.quote span {
+    font-style: italic;
+}
+
+/* ---- END BANNER / SUBTITLE ---- */
+
+.awcr {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: #4E4200;
+}
+
+/* ---- BEGIN ABOUT SECTION ---- */
+
+.about {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+
+}
+
+.about h2 {
+    flex: 1 30%;
+    padding-right: 10px;
+    position: relative;
+    margin: 18px auto;
+    
+}
+
+.about p {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 50px;
+    border-left: 3px #4E4200 solid;
+    
+}
+
+
+
+/* ---- BEGIN WORK GRID ---- */
+.work {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+}
+
+.work h2 {
+    flex: 1 30%;
+    padding-right: 10px;
+    position: relative;
+    margin: 400px auto;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    grid-template-rows: repeat(8, auto);
+    max-width: 80%;
+    grid-gap:10px;
+    margin: 0 auto;
+    border-left: solid black;
+    padding: 40px;
+    /*
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 50px;
+    */
+  }
+
+  .grid-item {
+    /*padding: 1em;*/
+    padding: 1px;
+    position: relative;
+}
+
+.grid-item img {
+     box-shadow: 5px 5px #FFAB1A;
+     display: flex;
+     align-items: flex-end;
+     max-width: 100%;
+
+  }
+
+.grid-item img:hover {
+    opacity: 60%;
+
+  } 
+
+.box1 {
+    grid-column-start: 1; 
+    grid-column-end: 5; 
+    grid-row-start: 1; 
+    grid-row-end: 5;
+    background: url("../Images/image-texture.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box2{
+    grid-column-start: 5; 
+    grid-column-end: 6; 
+    grid-row-start: 4; 
+    grid-row-end: 5;
+    background: url("../Images/image-texture.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box3 {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 6; 
+    grid-row-end: 7; 
+    background: url("../Images/image-texture.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.box4 {
+    grid-column-start: 3; 
+    grid-column-end: 4; 
+    grid-row-start: 6; 
+    grid-row-end: 7; 
+    background: url("../Images/image-texture.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box5 {
+    grid-column-start: 4; 
+    grid-column-end: 7; 
+    grid-row-start: 6; 
+    grid-row-end: 8; 
+    background: url("../Images/image-texture.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+  /* ---- BEGIN WORK CONTACT ---- */
+
+.contact {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+   
+}
+
+.contact h2 {
+    flex: 1 30%;
+    padding-right: 10px;
+}
+
+.contact p {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 50px;
+    border-left: 3px #4E4200 solid;
+}
+
